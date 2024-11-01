@@ -11,20 +11,21 @@ function HomepageHeader() {
 
   return (
     <header className={styles.container}>
-      <img src="/img/my_photo.jpg" alt="Your Photo" className={styles.image} />
-      <div className={styles.content}>
-        <h1>Madhu Hasitha Manne</h1>
-        <p>
-          As a student pursuing a specialized branch in Artificial Intelligence and Data Science,
-           I have a keen interest in solving challenging problems by using advanced technologies. 
-           I am an enthusiastic, self-motivated, reliable, responsible, and hardworking person. 
-           I am a quiet and focused person who can work swiftly and effectively either alone or as part of a team. 
-           I am always energetic and eager to learn new skills. I have a strong analytical mindset and excel in 
-           breaking down complex problems into manageable tasks. My passion for continuous learning drives me to
-            stay updated with the latest advancements in my field.I am committed to utilizing my technical 
-            expertise and creative 
-            problem-solving abilities to drive impactful results.
-        </p>
+      <div className={styles.inner}>
+        <img src="/img/my_photo.jpg" alt="Your Photo" className={styles.image} />
+        <div className={styles.content}>
+          <h1>Madhu Hasitha Manne</h1>
+          <p>
+            As a student pursuing a specialized branch in Artificial Intelligence and Data Science,
+            I have a keen interest in solving challenging problems by using advanced technologies. 
+            I am an enthusiastic, self-motivated, reliable, responsible, and hardworking person. 
+            I am a quiet and focused person who can work swiftly and effectively either alone or as part of a team. 
+            I am always energetic and eager to learn new skills. I have a strong analytical mindset and excel in 
+            breaking down complex problems into manageable tasks. My passion for continuous learning drives me to
+            stay updated with the latest advancements in my field. I am committed to utilizing my technical 
+            expertise and creative problem-solving abilities to drive impactful results.
+          </p>
+        </div>
       </div>
     </header>
   );
@@ -53,7 +54,7 @@ function ProjectsSection() {
     {
       image: '/img/db.jpg',
       title: 'AirPortDB',
-      description: 'A secure employee database system with the password-protected access,designed for reliable airport personnel management using HTML, CSS, JavaScript, and SQL.',
+      description: 'A secure employee database system with the password-protected access, designed for reliable airport personnel management using HTML, CSS, JavaScript, and SQL.',
       technologies: '#Xampp #HTML #PHP #CSS',
       link: 'https://github.com/hasitha2442/airline',
     },

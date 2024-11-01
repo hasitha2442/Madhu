@@ -1,34 +1,60 @@
+/* Outer Container Styling */
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: auto;
   padding: 20px;
+  width: 100%;
 }
+
+.inner {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(74, 144, 226, 0.3); /* Light blue border */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+
+
+/* Image Styling */
 .image {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-right: 40px;
+  margin-right: 20px; /* Space between image and text */
+  transition: transform 0.3s ease;
 }
 
+.image:hover {
+  transform: scale(1.1);
+}
+
+/* Content Styling */
 .content {
   max-width: 600px;
-  margin-bottom: -1rem;
 }
 
-h1 {
-  color: #333333;
-  font-size: 2.5em;
-  margin-bottom: 20px;
+/* Heading Styling */
+.content h1 {
+  color: #2c3e50; /* Darker shade for main heading */
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
 }
 
-p {
-  color: #4A90E2;
-  font-size: 1.2em;
+/* Paragraph Styling */
+.content p {
+  color: #5e728a; /* Soft blue */
+  font-size: 1.1em;
   line-height: 1.6;
   text-align: justify;
 }
+
+
+/* Projects Section Styling */
 .projectsSection {
   padding: 2rem 0; /* Increased padding for breathing space */
   text-align: center;
@@ -42,6 +68,7 @@ p {
   width: 100%;
 }
 
+/* Project Card Styling */
 .projectCard {
   width: 300px;
   font-size: small;
@@ -59,17 +86,31 @@ p {
   box-shadow: 0 12px 24px rgba(255, 255, 255, 0.5);
 }
 
+/* Project Image Hover Effect */
 .projectImage {
   width: 100%;
   height: 200px;
   object-fit: contain;
   padding-top: 10px;
+  transition: transform 0.3s ease;
 }
 
+.projectImage:hover {
+  transform: scale(1.1);
+}
+
+/* Project Content Styling */
 .projectContent {
   padding: 1rem;
 }
 
+.projectContent p {
+  color: #ffffff; /* Sets the description text color to white */
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Technologies and Link Styling */
 .techAndLink {
   display: flex;
   justify-content: space-between;
@@ -79,21 +120,38 @@ p {
 
 .technologies {
   margin: 0;
-  color: #ccc; /* Slightly lighter text for readability */
+  color: #8f8f8f; /* Muted text color */
+  font-weight: bold;
 }
 
+/* Button Styling */
 .projectLink {
   padding: 0.5rem 1rem;
-  background-color: transparent;
+  background-color: #4A90E2; /* Primary color */
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
-  border: 1px solid transparent;
-  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #4A90E2;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .projectLink:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight */
-  color: #1a1a1a;
-  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #4A90E2;
+  border-color: #4A90E2;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.2);
+}
+
+/* Header and Text Styling */
+h1 {
+  color: #333333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #4A90E2;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
 }

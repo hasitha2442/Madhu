@@ -79,7 +79,7 @@ const config = {
             // position: 'left',
             // label: 'Academics',
           },
-          {to: '/docs/intro', label: 'Projects', position: 'left'},
+          {to: '/#projects', label: 'Projects', position: 'left'},
           {
             to: '/docs/intro', label: 'Blog', position: 'left'
           },
